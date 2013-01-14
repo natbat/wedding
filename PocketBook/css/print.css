@@ -1,0 +1,81 @@
+#book {
+	position: relative;
+	overflow: visible;
+	height: 967px;
+	width: 741px;
+	margin: 0;
+	border: 1px solid #C7C7C7;
+}
+.page {
+	position: absolute;
+	float: none;
+	margin: 0;
+	outline: 0;
+	/*
+	width: 241px;
+	height: 370px;
+	*/
+}
+
+/* rotated left */
+#page1,
+#page8,
+#page7,
+#page6 {
+	-webkit-transform: translate(64.5px, -64.5px) rotate(-90deg);
+	-moz-transform: translate(64.5px, -64.5px) rotate(-90deg);
+	transform: translate(64.5px, -64.5px) rotate(-90deg);
+	/*-webkit-transform:rotate(90deg) scale(0.6) skew(-23deg);*/
+	border-bottom: 1px solid #C7C7C7;
+	border-left: 1px solid #C7C7C7;
+	left: 0;
+	
+}
+
+/* rotated right */
+#page2,
+#page3,
+#page4,
+#page5 {
+	-webkit-transform: translate(-64.5px, -64.5px) rotate(90deg);
+	-moz-transform: translate(-64.5px, -64.5px) rotate(90deg);
+	transform: translate(-64.5px, -64.5px) rotate(90deg);
+	border-right: 1px solid #C7C7C7;
+	right: 0;
+}	
+/* cover */
+#page1 {
+	top: 0;
+}
+#page2 {
+	top: 0;
+}
+#page3 {
+	top: 242px;
+}
+#page4 {
+	top: 484px;
+}
+#page5 {
+	top: 726px;
+	border-right: none;
+}
+#page6 {
+	top: 726px;
+	border-left: none;
+}
+#page7 {
+	top: 484px;
+}
+/* back page */
+#page8 {
+	top: 242px;
+}
+
+/*
+  Book pages
+  1		2
+  8		3
+  7		4
+  6		5
+*/
